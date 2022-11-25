@@ -1,10 +1,11 @@
-.search {
+.search__bar {
   width: 250px;
   position: relative;
   display: flex;
   height: 40px;
 }
-.input {
+
+.search__bar input {
   width: 100%;
   padding: 10px 0 10px 10px;
   border: 2px solid #111d5e;
@@ -15,7 +16,8 @@
   color: rgb(64, 33, 28);
   background: none;
 }
-.button {
+
+.search__bar button {
   background: url(../../../assets/img/icon-loupe.png);
   background-size: 80%;
   background-repeat: no-repeat;
@@ -27,8 +29,7 @@
   padding: 0;
 }
 
-
-input::-webkit-search-cancel-button {
+.search__bar input::-webkit-search-cancel-button {
   appearance: none;
   background: url(../../../assets/img/icon_close.png);
   background-size: 14px 14px;

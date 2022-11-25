@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import { Home } from './pageHome';
+import { Home } from '../pages/pageHome/pageHome';
 
 describe('test card', () => {
   it('render five card', () => {

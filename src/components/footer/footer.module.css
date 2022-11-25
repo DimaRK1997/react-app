@@ -1,6 +1,6 @@
-.footer {
+.content {
   width: 100%;
-  max-width: 1400px;
+  min-width: 380px;
   margin: 0 auto;
   height: 50px;
   background: #d0a2a2;

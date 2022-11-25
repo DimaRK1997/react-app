@@ -1,5 +1,3 @@
-
-
 .card {
   width: 318px;
   height: 400px;
@@ -7,14 +5,15 @@
   border-radius: 20px;
   margin: 15px;
 }
-.divimg {
+.card__photo {
   position: relative;
   width: 100%;
   height: 190px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 20px 20px 0 0;
 }
-.img {
+
+.photo {
   height: 190px;
   position: absolute;
   left: 0;
@@ -24,20 +23,20 @@
   border-radius: 20px 20px 0 0;
 }
 
-.info {
+.card__info {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
 }
 
-.name {
+.card-header {
   font-size: 20px;
-  font-weight: 500;
+  margin: 5px 0;
   text-align: center;
   color: #6e798c;
 }
 
-.data {
+.about-items {
   margin: 10px 0;
   padding: 0 15px;
   display: flex;
@@ -45,22 +44,19 @@
   color: #374a59;
 }
 
-.text {
+.about-item {
+  list-style-type: none;
   line-height: 25px;
 }
 
-.contentaction {
+.card__footer {
   margin: 10px 0;
   padding: 0 15px;
-  color: #007ae9;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
   display: flex;
   justify-content: space-between;
 }
 
-.basket {
+.footer_add-card {
   width: 110px;
   height: 30px;
   border: none;
@@ -68,12 +64,17 @@
   border-radius: 5px;
 }
 
-.basket:hover {
+.footer_add-card:hover {
   cursor: pointer;
   background: #ba7f7f;
 }
 
-.moreinfo {
+.footer_open-moda {
+  background: none;
+  border: none;
   cursor: pointer;
-  align-self: center;
+  color: #007ae9;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
 }
