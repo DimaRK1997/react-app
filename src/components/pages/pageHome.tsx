@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from './cards/card';
+import { Card } from './card/card';
 import { Search } from './search/search';
 import classes from './stylesPages/home.module.css';
 import data from '../../storage/data.json';

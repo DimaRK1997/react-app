@@ -23,7 +23,7 @@ export class Card extends React.Component<CardProps> {
     return (
       <div className={classes.card} key={this.props.cat.id}>
         <div className={classes.divimg}>
-          <img className={classes.img} src={this.props.cat.image_link} alt="" />
+          <img className={classes.img} src={this.props.cat.image_link} alt="photo" />
         </div>
         <div className={classes.info}>
           <span className={classes.name}>{this.props.cat.name}</span>
