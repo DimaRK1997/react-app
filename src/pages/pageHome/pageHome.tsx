@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from './card/card';
 import { Search } from './search/search';
-import classes from './home.module.css';
+import classes from './pageHome.module.css';
 import data from '../../storage/data.json';
 
 export class Home extends React.Component {
