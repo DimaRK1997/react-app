@@ -1,0 +1,32 @@
+.header {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  /* height: 50px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #d0a2a2;
+}
+
+.logo {
+  margin-left: 30px;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 110px;
+  margin-right: 30px;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #000;
+}

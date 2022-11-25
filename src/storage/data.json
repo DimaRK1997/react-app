@@ -1,0 +1,57 @@
+[
+  {
+    "id": "n1",
+    "length": "12 to 16 inches",
+    "origin": "Southeast Asia",
+    "image_link": "https://api-ninjas.com/images/cats/abyssinian.jpg",
+    "min_weight": 6,
+    "max_weight": 10,
+    "min_life_expectancy": 9,
+    "max_life_expectancy": 15,
+    "name": "Abyssinian"
+  },
+  {
+    "id": "n2",
+    "length": "17 to 22 inches",
+    "origin": "USA",
+    "image_link": "https://api-ninjas.com/images/cats/bengal_cats.jpg",
+    "min_weight": 8,
+    "max_weight": 17,
+    "min_life_expectancy": 10,
+    "max_life_expectancy": 16,
+    "name": "Bengal Cats"
+  },
+  {
+    "id": "n3",
+    "length": "13 to 20 inches",
+    "origin": "Kentucky, USA",
+    "image_link": "https://api-ninjas.com/images/cats/bombay.jpg",
+    "min_weight": 8,
+    "max_weight": 15,
+    "min_life_expectancy": 12,
+    "max_life_expectancy": 20,
+    "name": "Bombay"
+  },
+  {
+    "id": "n4",
+    "length": "Medium to Large",
+    "origin": "Great Britain",
+    "image_link": "https://api-ninjas.com/images/cats/british_longhair.jpg",
+    "min_weight": 9,
+    "max_weight": 18,
+    "min_life_expectancy": 15,
+    "max_life_expectancy": 17,
+    "name": "British Longhair"
+  },
+  {
+    "id": "n5",
+    "length": "22 to 25 inches",
+    "origin": "Great Britain",
+    "image_link": "https://api-ninjas.com/images/cats/british_shorthair.jpg",
+    "min_weight": 7,
+    "max_weight": 17,
+    "min_life_expectancy": 12,
+    "max_life_expectancy": 17,
+    "name": "British Shorthair"
+  }
+]
