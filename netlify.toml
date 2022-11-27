@@ -1,12 +1,8 @@
 [build]
-  publish = "build/"
+  publish = "/build"
   command = "npm run build"
 
 
 [[redirects]]
   from = "/"
-  to = "/build/"
-
-[[redirects]]
-  from = "/build/"
-  to = "/"
+  to = "/about"
