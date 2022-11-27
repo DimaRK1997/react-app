@@ -2,9 +2,6 @@
   publish = "public/"
   command = "npm run build"
 
-[[redirects]]
-  from = "/"
-  to = "/"
 
 [[redirects]]
   from = "/about"
