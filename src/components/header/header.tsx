@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 export class Header extends React.Component {
   render() {
-    console.log(process.env.PUBLIC_URL);
     return (
       <header className={classes.content}>
         <div className={classes.content__logo}>
