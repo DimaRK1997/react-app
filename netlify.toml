@@ -5,7 +5,11 @@
 [[redirects]]
   from = "/"
   to = "/"
+
+[[redirects]]
   from = "/about"
   to = "/about"
+
+[[redirects]]
   from = "/*"
   to = "/"
