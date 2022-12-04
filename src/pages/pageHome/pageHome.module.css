@@ -1,0 +1,13 @@
+.wrapper__search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.wrapper__cards {
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
