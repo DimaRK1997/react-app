@@ -1,4 +1,3 @@
-import classes from './form.module.css';
 import React from 'react';
 import { Card } from 'pages/pageHome/card/card';
 
