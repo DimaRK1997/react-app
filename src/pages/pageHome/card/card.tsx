@@ -5,7 +5,6 @@ type CardProps = {
   cat: {
     id: string;
     length: string;
-    origin: string;
     image_link: string;
     min_weight: number;
     max_weight: number;

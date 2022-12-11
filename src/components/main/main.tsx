@@ -4,6 +4,7 @@ import { Home } from 'pages/pageHome/pageHome';
 import { NotFound } from 'pages/pageNotFound/pageNotFound';
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { Form } from 'form/form';
 
 export class Main extends React.Component {
   render() {
@@ -13,6 +14,7 @@ export class Main extends React.Component {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/*" element={<NotFound />} />
+          <Route path="/form" element={<Form />} />
         </Routes>
       </main>
     );
