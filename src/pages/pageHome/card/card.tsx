@@ -1,17 +1,9 @@
 import classes from './card.module.css';
 import React from 'react';
+import { Cat } from 'components/main/main';
 
 type CardProps = {
-  cat: {
-    id: string;
-    length: string;
-    image_link: string;
-    min_weight: number;
-    max_weight: number;
-    min_life_expectancy: number;
-    max_life_expectancy: number;
-    name: string;
-  };
+  cat: Cat;
 };
 
 export class Card extends React.Component<CardProps> {
@@ -22,20 +14,20 @@ export class Card extends React.Component<CardProps> {
     return (
       <article className={classes.card} key={this.props.cat.id}>
         <div className={classes.card__photo}>
-          <img className={classes.photo} src={this.props.cat.image_link} alt="photo" />
+          <img className={classes.photo} src={this.props.cat.image} alt="photo" />
         </div>
         <div className={classes.card__info}>
           <h3 className={classes['card-header']}>{this.props.cat.name}</h3>
           <ul className={classes['about-items']}>
             <li className={classes['about-item']}>
               Weight: from&nbsp;
-              {this.props.cat.min_weight} to&nbsp;
-              {this.props.cat.max_weight}
+              {this.props.cat.minWeight} to&nbsp;
+              {this.props.cat.maxWeight}
             </li>
             <li className={classes['about-item']}>
               Lifetime: from&nbsp;
-              {this.props.cat.min_life_expectancy} to&nbsp;
-              {this.props.cat.max_life_expectancy}
+              {this.props.cat.minLife} to&nbsp;
+              {this.props.cat.maxLife}
             </li>
             <li className={classes['about-item']}>Length: {this.props.cat.length}</li>
           </ul>
