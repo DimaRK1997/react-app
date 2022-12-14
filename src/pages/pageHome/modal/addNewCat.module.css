@@ -1,0 +1,36 @@
+.content__modal {
+  /* border: 2px solid red; */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  margin: auto;
+  width: 335px;
+  height: fit-content;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.wrapper_close-modal {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-modal {
+  background: none;
+  width: 36px;
+  height: 36px;
+  border: 2px solid #d0a2a2;
+  border-radius: 18px;
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.close-modal:hover {
+  color: #a95757;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import classes from './form.module.css';
 
 type HandleSubmit = {
   handleSubmit: (e: React.FormEvent) => void;
@@ -7,31 +8,39 @@ type HandleSubmit = {
 export class Form extends React.Component<HandleSubmit> {
   render() {
     return (
-      <form onSubmit={this.props.handleSubmit}>
-        <label>
-          Name:
-          <input name="name" type="text" />
-        </label>
-        <br />
-        <label>
-          Weight: from
-          <input name="minWeight" type="number" /> to
-          <input name="maxWeight" type="number" />
-        </label>
-        <br />
-        <label>
-          Lifetime: from
-          <input name="minLife" type="number" /> to
-          <input name="maxLife" type="number" />
-        </label>
-        <br />
-        <label>
-          Length:
-          <input name="length" type="text" />
-        </label>
-        <br />
-        <input type="submit" />
-      </form>
+      <div className={classes.wrapper_form}>
+        <form onSubmit={this.props.handleSubmit} className={classes.form}>
+          <input
+            name="name"
+            type="text"
+            placeholder="Name ..."
+            pattern="[A-Za-z]{3,}"
+            title="Only latin letters"
+            required
+          />
+
+          <div className={classes.form_item}>
+            <input name="minWeight" type="number" placeholder="Min weight ..." required />
+            <input name="maxWeight" type="number" placeholder="Max weight ..." required />
+          </div>
+
+          <div className={classes.form_item}>
+            <input name="minLife" type="number" placeholder="Min life ..." required />
+            <input name="maxLife" type="number" placeholder="Max life ..." required />
+          </div>
+
+          <input
+            name="length"
+            type="text"
+            placeholder="Length ..."
+            pattern="[a-zA-Z0-9\s]{3,}"
+            title="Only latin and Number letters"
+            required
+          />
+
+          <input type="submit" value="ADD CAT" />
+        </form>
+      </div>
     );
   }
 }

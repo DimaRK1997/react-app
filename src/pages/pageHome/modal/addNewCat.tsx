@@ -1,12 +1,14 @@
 import { Cat } from 'components/main/main';
 import React from 'react';
 import { Form } from '../form/form';
+import classes from './addNewCat.module.css';
 
-type HandleCats = {
+type PropsFunc = {
   createCat: (cat: Cat) => void;
+  toggleModal: () => void;
 };
 
-export class AddNewCat extends React.Component<HandleCats> {
+export class AddNewCat extends React.Component<PropsFunc> {
   handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const form = e.target as HTMLFormElement;
@@ -28,10 +30,16 @@ export class AddNewCat extends React.Component<HandleCats> {
     };
 
     this.props.createCat(cat);
+    form.reset();
   };
   render() {
     return (
-      <div>
+      <div className={classes.content__modal}>
+        <div className={classes['wrapper_close-modal']}>
+          <button className={classes['close-modal']} onClick={this.props.toggleModal}>
+            &times;
+          </button>
+        </div>
         <Form handleSubmit={this.handleSubmit} />
       </div>
     );

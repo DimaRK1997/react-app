@@ -6,12 +6,11 @@ describe('test one card', () => {
     const cat = {
       id: 'n1',
       length: 'length',
-      origin: 'Southeast Asia',
-      image_link: 'https://api-ninjas.com/images/cats/abyssinian.jpg',
-      min_weight: 1,
-      max_weight: 1,
-      min_life_expectancy: 2,
-      max_life_expectancy: 2,
+      image: 'https://api-ninjas.com/images/cats/abyssinian.jpg',
+      minWeight: 1,
+      maxWeight: 1,
+      minLife: 2,
+      maxLife: 2,
       name: 'Abyssinian',
     };
 
