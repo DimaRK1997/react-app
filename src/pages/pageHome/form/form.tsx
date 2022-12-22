@@ -1,11 +1,11 @@
 import React from 'react';
 import classes from './form.module.css';
 
-type HandleSubmit = {
+type FormProps = {
   handleSubmit: (e: React.FormEvent) => void;
 };
 
-export class Form extends React.Component<HandleSubmit> {
+export class Form extends React.Component<FormProps> {
   render() {
     return (
       <div className={classes.wrapper_form}>
@@ -38,7 +38,7 @@ export class Form extends React.Component<HandleSubmit> {
             required
           />
 
-          <input type="submit" value="ADD CAT" />
+          <button type="submit">ADD CAT</button>
         </form>
       </div>
     );

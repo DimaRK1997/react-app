@@ -1,6 +1,6 @@
 import classes from './card.module.css';
 import React from 'react';
-import { Cat } from 'components/main/main';
+import { Cat } from 'types/models';
 
 type CardProps = {
   cat: Cat;

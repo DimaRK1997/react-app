@@ -35,7 +35,7 @@ input[type='number'] {
   width: 100px;
 }
 
-input[type='submit'] {
+button[type='submit'] {
   width: 100px;
   height: 30px;
   background: #d0a2a2;
@@ -60,6 +60,6 @@ input:invalid {
   border: 1px solid #824646;
 }
 
-input[type='submit']:hover {
+button[type='submit']:hover {
   background: #a95757;
 }

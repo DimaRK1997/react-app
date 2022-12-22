@@ -6,21 +6,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { AddNewCat } from 'pages/pageHome/modal/addNewCat';
 import data from '../../storage/data.json';
-
-export type Cat = {
-  id: string;
-  length: string;
-  image?: string;
-  minWeight: number;
-  maxWeight: number;
-  minLife: number;
-  maxLife: number;
-  name: string;
-};
-
-export type Cats = {
-  cats: Cat[];
-};
+import { Cat } from 'types/models';
 
 export class Main extends React.Component {
   state = { cats: data, isActive: false };
@@ -30,17 +16,15 @@ export class Main extends React.Component {
     alert('New cat created');
   };
 
-  toggleModal = () => {
-    this.setState({ isActive: this.state.isActive ? false : true });
+  toggleModal = (bool: boolean) => {
+    this.setState({ isActive: bool });
   };
 
   render() {
-    let classNameModal = 'modal';
-    let classNameAdd = 'add-cat';
-    if (this.state.isActive) {
-      classNameModal = 'modal-active';
-      classNameAdd = 'add-cat_remove';
-    }
+    console.log(this);
+    const classNameModal = this.state.isActive ? 'modal-active' : 'modal';
+    const classNameAdd = this.state.isActive ? 'add-cat_remove' : 'add-cat';
+
     return (
       <main className={classes.content}>
         <Routes>
@@ -52,7 +36,7 @@ export class Main extends React.Component {
           <div className={classes.box_shadow}></div>
           <AddNewCat createCat={this.createCat} toggleModal={this.toggleModal} />
         </div>
-        <div className={classes[classNameAdd]} onClick={this.toggleModal}>
+        <div className={classes[classNameAdd]} onClick={() => this.toggleModal(true)}>
           ADD CAT
         </div>
       </main>
