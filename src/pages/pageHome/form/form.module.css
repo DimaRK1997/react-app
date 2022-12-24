@@ -18,7 +18,7 @@
   margin: 10px 0;
 }
 
-input {
+.form input {
   height: 25px;
   background: none;
   border: 1px solid #b7b7b7;
@@ -27,15 +27,15 @@ input {
   padding: 0 10px;
 }
 
-input[type='text'] {
+.form input[type='text'] {
   width: -webkit-fill-available;
 }
 
-input[type='number'] {
+.form input[type='number'] {
   width: 100px;
 }
 
-button[type='submit'] {
+.form button[type='submit'] {
   width: 100px;
   height: 30px;
   background: #d0a2a2;
